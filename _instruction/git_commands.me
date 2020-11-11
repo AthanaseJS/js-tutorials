@@ -1,0 +1,36 @@
+
+// I. რეპოზიტარის რეგისტრაცია git-ში (ლიკალურად) 
+
+git init
+git status
+
+git config --global user.name "Athanase"
+git config --global user.email "amakaridi@gmail.com"
+git cinfig --list     
+
+git add (file name)
+git add .
+
+git commit -m "comments"
+
+git branch
+git branch (new bracn Name)
+git branch -M master         // ახალი შტოს შექმნა
+git branch -d (branch Name)  // შტოს წაშლა
+
+git remote add <name> <url>
+git remote add origin https://github.com/AthanaseJS/git-basics.git
+git push -u origin master
+
+// ორი შტოს შერწყმა
+git checkout 
+git checkout -b ( branch name)  // create and switch
+
+// II. არსებული პროექტის ლოკალურ მანქანაზე გადმოტანა
+git clone https://.....   //  კლონირება
+git pull    // take last verson from github
+
+
+// დამატებითი
+git help <verb>    // example of verbs: config, add,  
+git <verb> --help  
