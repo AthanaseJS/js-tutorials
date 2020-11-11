@@ -8,29 +8,34 @@ git config --global user.name "Athanase"
 git config --global user.email "amakaridi@gmail.com"
 git cinfig --list     
 
+git diff    // განსხვავების ჩვენება, გამოიყენება ცვლილების შემთხვევაში
 git add (file name)
 git add .  //  ან git add -A  //გაუქმენა git reset
 
 git commit -m "comments"
 
-git branch
+git branch                   // ბრენჩების ჩამონათვალი
 git branch (new bracn Name)
 git branch -M master         // ახალი შტოს შექმნა
 git branch -d (branch Name)  // შტოს წაშლა
 
 git remote add <name> <url>
 git remote add origin https://github.com/AthanaseJS/git-basics.git
+git pull  origin master    // take last verson from github
 git push -u origin master
 
 // ორი შტოს შერწყმა
-git checkout 
+git checkout ( branch name)    // ბრენჩზე გადართვა
 git checkout -b ( branch name)  // create and switch
 
 // II. არსებული პროექტის ლოკალურ მანქანაზე გადმოტანა
-git clone https://.....   //  კლონირება
-git pull    // take last verson from github
+
+git clone https://github.com/.....   //  კლონირება
+
 
 
 // დამატებითი
 git help <verb>    // example of verbs: config, add,  
-git <verb> --help  
+git <verb> --help 
+git log            // კომიტების ლოგების ნახვა 
+get remote -v      // რეპოზიტარების ჩამონათვალი
