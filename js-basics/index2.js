@@ -1,3 +1,5 @@
+// vareables
+
 name = 'Jimi'
 let age = 30
 console.log(name + ' ' + age)
@@ -15,5 +17,8 @@ person.firstName = 'John'
 
 // brocket Notation
 person['firstName'] = 'Mary'
+
+let selection = 'name'
+person[selection] = 'Mary'
 
 console.log(person)
