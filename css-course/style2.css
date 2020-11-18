@@ -1,0 +1,11 @@
+.links {
+  color: royalblue;
+}
+
+.links li:nth-child(2) {
+  color: greenyellow;
+}
+
+.important {
+  color: red;
+}
