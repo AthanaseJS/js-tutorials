@@ -1,0 +1,39 @@
+.important {
+  color: blue;
+}
+
+#head {
+  color: darkred;
+}
+
+.header {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+.random h3 {
+  color: green;
+}
+
+.my-list + ul {
+  list-style: none;
+}
+
+.nav-links > li {
+  color: green;
+}
+
+.nav-links li a {
+  color: yellowgreen;
+}
+
+.links {
+  color: royalblue;
+}
+
+.links li:nth-child(2) {
+  color: greenyellow;
+}
