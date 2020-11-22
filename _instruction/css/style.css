@@ -1,13 +1,17 @@
+.header {
+  color: red;
+  font-family: verdana;
+  font-size: 200%;
+}
+
 .important {
   color: blue;
+  font-family: courier;
+  font-size: 120%;
 }
 
 #head {
   color: darkred;
-}
-
-.header {
-  color: red;
 }
 
 h1 {
