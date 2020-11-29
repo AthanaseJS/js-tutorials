@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,folow" />
+    <meta content="html css" />
+    <title>html and css course</title>
+    <link rel="stylesheet" href="/html-beginner/index.css" />
+    <link rel="icon" href="/html-course/icons/youtube.jpg" />
+  </head>
+  <body>
+    <h1>Register Customer</h1>
+
+    <form action="process.php" method="POST">
+      <div>
+        <label for="">სახელი</label>
+        <input type="text" name="firstName" placeholder="სახელი" />
+
+        <label for="">გვარი</label>
+        <input type="text" name="lastName" placeholder="გვარი" />
+      </div>
+      <br />
+      <hr />
+      <div>
+        <label for="">ელ.ფოსტა</label>
+        <input type="email" name="email" placeholder=" მისამართი" />
+      </div>
+      <div>
+        <label for="">შეტყობინება</label>
+        <textarea name="massage" id="msg" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="">სქესი</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Femail</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" /><br />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female" /><br />
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value="other" /><br />
+      </div>
+      <div>
+        <label for="">ასაკი</label>
+        <input type="number" name="birthday" />
+      </div>
+      <br />
+      <div>
+        <label for="">დაბადების თარიღი</label>
+        <input type="date" name="birthday" />
+        <input type="submit" name="submit" />
+      </div>
+    </form>
+    <br />
+    <button click="someFunction">Click Me</button>
+    <br />
+    <br />
+    <a
+      href="https://www.myhome.ge/ka/s/iyideba-miwis-nakveTi-Tbilisi?Keyword=%E1%83%97%E1%83%91%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1%E1%83%98&AdTypeID=1&PrTypeID=5&regions=689678147&districts=28484762&cities=1996871&GID=1996871"
+    >
+      <img
+        src="/html-beginner/img/20190707_141321.jpg"
+        alt="Tsavkisi"
+        style="width: 400px; height: 300px"
+      />
+    </a>
+    <a href="">
+      <img
+        src="/html-beginner/img/Napetvrebi.png"
+        alt="Napetvary"
+        width="400"
+        height="300"
+      />
+    </a>
+    <!-- Quatetion -->
+    <blockquote cite="www.google.com">worm text</blockquote>
+  </body>
+</html>
