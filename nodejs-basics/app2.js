@@ -1,4 +1,4 @@
-console.log('Hello, this is JS in nood !') //global
+console.log('Hello, this is JS in node !') //global
 
 function sayHello(name) {
   console.log('Hello, this is ' + name)
