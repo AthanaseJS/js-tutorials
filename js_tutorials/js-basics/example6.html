@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>
+      Click the button to demonstrate that the toString() method converts a
+      boolean into a string:
+    </p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        var bool = true
+        var x = bool.toString()
+        document.getElementById('demo').innerHTML = x.length
+        
+      }
+    </script>
+  </body>
+</html>
