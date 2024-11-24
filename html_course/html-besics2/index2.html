@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index,folow" />
-    <meta content="html css" />
-    <title>html and css course</title>
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="description"
+      content="Learn HTML and CSS through this interactive course."
+    />
+    <title>HTML and CSS Course</title>
     <link rel="stylesheet" href="/HTML CSS course/index.css" />
     <link
       rel="icon"
@@ -13,9 +16,8 @@
     />
   </head>
   <body>
-    <!-- მნიშვნელოვანი პარამეტრები, გასარჩევია სათითაოთ -->
-    <h1>Hello forms !</h1>
-    <form action="/index.html">
+    <h1>Hello Forms!</h1>
+    <form action="/submit.html" method="post">
       <label for="user">User Name</label>
       <input
         maxlength="16"
@@ -23,23 +25,34 @@
         name="user"
         type="text"
         id="user"
-        placeholder="type name"
+        placeholder="Type name"
+        required
       />
-      <label for="email">Email address</label>
-      <input autocomplete="off" name="email" type="text" id="email" />
-      <select name="products" id="product">
-        <option value="null">not define</option>
-        <option value="MB">Mackbook</option>
-        <option value="HB">Hewlett-Packard</option>
+      <label for="email">Email Address</label>
+      <input
+        autocomplete="off"
+        name="email"
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
+      <label for="product">Choose a Product</label>
+      <select name="products" id="product" required>
+        <option value="" disabled selected>Select a Product</option>
+        <option value="MB">MacBook</option>
+        <option value="HP">Hewlett-Packard</option>
       </select>
-
-      <textarea name="message" id="messageID" cols="30" rows="10"></textarea>
+      <label for="messageID">Message</label>
+      <textarea
+        name="message"
+        id="messageID"
+        cols="30"
+        rows="10"
+        placeholder="Type your message here..."
+        required
+      ></textarea>
       <button type="submit">Submit</button>
     </form>
-    <!--
-    <a href="/HTML CSS course/index.html" target="_blank"
-      >link me to other page</a
-    >
-    -->
   </body>
 </html>
