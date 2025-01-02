@@ -1,18 +1,18 @@
 // functions
 function greet(name, lastName) {
-  console.log('Hello ' + name + ' ' + lastName)
+  console.log("Hello " + name + " " + lastName);
 }
 
-greet('Irma')
+greet("Irma");
 
-greet('Mary', 'Smith')
+greet("Mary", "Smith");
 
 //calculate a value
 function square(number) {
-  return number * number
+  return number * number;
 }
 
-let resulsts = square(3)
-console.log(resulsts)
+let results = square(3);
+console.log(results);
 
-console.log(square(9))
+console.log(square(9));
