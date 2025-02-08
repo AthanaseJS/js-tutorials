@@ -3,30 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      input,
+      textarea {
+        display: block;
+        margin: 10px 0;
+      }
+    </style>
   </head>
   <body>
-    <h2>This is HTTP tutorial</h2>
+    <h2>This is an HTTP Tutorial</h2>
     <p>This is my paragraph</p>
     <p>
-      <big>This is</big>a second <b><i>paragraph</i></b>
+      <big>This is</big> a second <b><i>paragraph</i></b>
     </p>
     <hr />
-    <br />
-    <input type="text" value="Enter your user name" />
-    <input type="password" />
-    <input type="date" />
-    <input type="email" />
-    <input type="file" />
-    <br /><br />
-    <textarea name="" id="" cols="30" rows="10">Enter the paragraph</textarea>
-    <br /><br />
-    <input type="checkbox" />
-    <input type="checkbox" />
-    <input type="checkbox" />
-    <input type="radio" />
-    <input name="btn" type="radio" />
-    <br /><br />
-    <input type="submit" />
+
+    <form action="#" method="POST">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your user name"
+      />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="file">Upload File:</label>
+      <input type="file" id="file" name="file" />
+
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        cols="30"
+        rows="5"
+        placeholder="Enter your message"
+      ></textarea>
+
+      <fieldset>
+        <legend>Select your preferences:</legend>
+        <input type="checkbox" id="option1" name="option1" />
+        <label for="option1">Option 1</label>
+
+        <input type="checkbox" id="option2" name="option2" />
+        <label for="option2">Option 2</label>
+
+        <input type="checkbox" id="option3" name="option3" />
+        <label for="option3">Option 3</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose one:</legend>
+        <input type="radio" id="radio1" name="choice" value="1" />
+        <label for="radio1">Choice 1</label>
+
+        <input type="radio" id="radio2" name="choice" value="2" />
+        <label for="radio2">Choice 2</label>
+      </fieldset>
+
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
