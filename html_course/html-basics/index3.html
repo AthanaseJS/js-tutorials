@@ -3,18 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Styled Document</title>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      .blue-text {
+        color: blue;
+      }
+      .red-text {
+        color: crimson;
+      }
+      .green-on-white {
+        background-color: white;
+        color: green;
+      }
+      .blue-bg {
+        background-color: darkblue;
+        color: darkturquoise;
+        padding: 10px;
+      }
+    </style>
   </head>
-  <body style="background-color: lightblue">
-    <!--This is the commentsa plase -->
+  <body>
+    <!-- This is the comments section -->
     <h2>Style and Color</h2>
-    <p style="color: blue">wou can style your HTML and make it loop pretty</p>
-    <p style="color: crimson">this is read</p>
-    <p style="background-color: white; color: green">this is greeen on white</p>
-    <h1>
-      <p style="background-color: darkblue; color: darkturquoise">
-        this is background color blue
-      </p>
-    </h1>
+
+    <p class="blue-text">You can style your HTML and make it look pretty.</p>
+    <p class="red-text">This is red.</p>
+    <p class="green-on-white">This is green on white.</p>
+
+    <p class="blue-bg">
+      This is a background color blue with dark turquoise text.
+    </p>
   </body>
 </html>
