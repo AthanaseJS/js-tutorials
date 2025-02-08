@@ -4,27 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML - basic Exersize N18</title>
+    <title>HTML - Basic Exercise N18</title>
+    <style>
+      .big-text {
+        font-size: 1.2em;
+      }
+      .myClass {
+        background-color: lightgray;
+        padding: 10px;
+        margin-top: 10px;
+      }
+    </style>
   </head>
   <body>
-    <div>"This is a div"</div>
-    <h2>This is HTTP tutorial</h2>
+    <div>This is a div</div>
+    <h2>This is an HTTP Tutorial</h2>
     <p>This is my paragraph</p>
     <p>
-      <big>This is</big>a second <b><i>paragraph</i></b>
+      <span class="big-text">This is</span> a second <b><i>paragraph</i></b>
     </p>
-    <p>an example sub tag is used here - H<sub>2</sub>O</p>
+    <p>An example sub tag is used here - H<sub>2</sub>O</p>
     <p>This is the example of super tag - 10 <sup>2</sup></p>
     <hr />
-    <br />
     <ul>
       <li>one</li>
       <li>two</li>
       <li>three</li>
       <li>four</li>
     </ul>
-    <div class="myClass"></div>
+    <div class="myClass">This is a styled div</div>
+    <label for="foo">Enter text:</label>
     <input type="text" id="foo" class="bar" />
+    <label for="bDate">Select Date:</label>
     <input type="date" name="birthday" id="bDate" />
     <input type="button" value="First button" />
   </body>
