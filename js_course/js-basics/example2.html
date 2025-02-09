@@ -4,33 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Light Bulb Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f4;
+        margin: 20px;
+      }
+      button {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+      }
+      .on-btn {
+        background-color: green;
+        color: white;
+      }
+      .off-btn {
+        background-color: red;
+        color: white;
+      }
+      img {
+        display: block;
+        margin: 20px auto;
+        width: 120px;
+      }
+    </style>
   </head>
   <body>
     <h2>What Can JavaScript Do?</h2>
-
     <p>JavaScript can change HTML attribute values.</p>
-
     <p>
-      In this case, JavaScript changes the value of the <code>src</code>
-      (source) attribute of an image.
+      In this case, JavaScript changes the value of the
+      <code>src</code> (source) attribute of an image.
     </p>
 
-    <!-- Button to turn on the light -->
-    <button onclick="document.getElementById('myImage').src='pic_bulbOn.gif'">
+    <!-- Light Bulb Image -->
+    <img id="myImage" src="pic_bulbOff.gif" alt="Light bulb" />
+
+    <!-- Buttons -->
+    <button
+      type="button"
+      class="on-btn"
+      onclick="toggleLight('pic_bulbOn.gif')"
+    >
       Turn on the light
     </button>
-
-    <!-- Image with a unique ID -->
-    <img
-      id="myImage"
-      src="pic_bulbOff.gif"
-      alt="Light bulb"
-      style="width: 100px"
-    />
-
-    <!-- Button to turn off the light -->
-    <button onclick="document.getElementById('myImage').src='pic_bulbOff.gif'">
+    <button
+      type="button"
+      class="off-btn"
+      onclick="toggleLight('pic_bulbOff.gif')"
+    >
       Turn off the light
     </button>
+
+    <!-- JavaScript Function -->
+    <script>
+      function toggleLight(imageSrc) {
+        document.getElementById("myImage").src = imageSrc;
+      }
+    </script>
   </body>
 </html>
